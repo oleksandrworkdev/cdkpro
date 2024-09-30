@@ -29,10 +29,6 @@ jobs:
     - name: install AWS CDK
       run: npm i -g aws-cdk
 
-    - name: build AWS CDK
-      run: npm run build --if-present
-      working-directory: ./backend
-
     - name: install deployment dependencies
       run: pip install -r requirements.txt
       working-directory: ./py-webdepl
